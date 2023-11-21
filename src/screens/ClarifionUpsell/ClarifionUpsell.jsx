@@ -69,7 +69,7 @@ export const ClarifionUpsell = () => {
                 src="https://c.animaapp.com/m3B6At5P/img/tick-circle-1.svg"
               />
             </div>
-            <p className="text-wrapper-14">Step 1 : Cart Review</p>
+            <p className="text-wrapper-14"><span>Step 1 :</span> Cart Review</p>
           </div>
           <div className="frame-26">
             <div className="tick-circle-wrapper">
@@ -79,7 +79,7 @@ export const ClarifionUpsell = () => {
                 src="https://c.animaapp.com/m3B6At5P/img/tick-circle.svg"
               />
             </div>
-            <div className="text-wrapper-14">Step 2 : Checkout</div>
+            <div className="text-wrapper-14"><span>Step 2 :</span> Checkout</div>
           </div>
           <div className="frame-26">
             <div className="overlap-group-wrapper">
@@ -87,7 +87,7 @@ export const ClarifionUpsell = () => {
                 <div className="text-wrapper-15">3</div>
               </div>
             </div>
-            <p className="text-wrapper-16">Step 3 : Special Offer</p>
+            <p className="text-wrapper-16"><span>Step 3 :</span> Special Offer</p>
           </div>
           <div className="frame-26">
             <div className="overlap-group-wrapper">
@@ -95,7 +95,7 @@ export const ClarifionUpsell = () => {
                 <div className="text-wrapper-17">4</div>
               </div>
             </div>
-            <div className="text-wrapper-14">Step 4 : Confirmation</div>
+            <div className="text-wrapper-14"><span>Step 4 :</span> Confirmation</div>
           </div>
         </div>
         <div className="content">
