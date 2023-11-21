@@ -1,40 +1,51 @@
+/* CSS */
+
 .clarifion-upsell {
-  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.USPS {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  align-items: center;
+  background-color: #252f3d;
+  height: 50px;
+  left: 0;
+  top: 0;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .clarifion-upsell .div {
   background-color: #ffffff;
-  height: 1379px;
-  position: relative;
-  width: 1500px;
+  height: 100%;
+  /* position: relative; */
+  width: 100%;
 }
-
-.clarifion-upsell .USPS {
-  background-color: #252f3d;
-  height: 50px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1500px;
-}
-
 .clarifion-upsell .element {
   height: 22px;
   left: 127px;
-  position: absolute;
+  display: flex;
   top: 15px;
-  width: 229px;
+  width: 19%;
+  align-items: center;
+  justify-content: center;
 }
 
-.clarifion-upsell .img {
+.clarifion-upsell > .img {
   height: 22px;
-  left: 0;
-  position: absolute;
-  top: 0;
+  /* display: inline; */
   width: 22px;
 }
 
@@ -46,12 +57,12 @@
   left: 30px;
   letter-spacing: 0;
   line-height: 12px;
-  position: absolute;
+
   top: 7px;
   white-space: nowrap;
 }
 
-.clarifion-upsell .element-2 {
+/* .clarifion-upsell .element-2 {
   height: 22px;
   left: 468px;
   position: absolute;
@@ -73,14 +84,28 @@
   position: absolute;
   top: 15px;
   width: 211px;
+} */
+button {
+  background-color: #59ae43;
+  border-radius: 50px;
+  flex-direction: column;
+  flex: none;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px 64px;
+  display: flex;
+  position: relative;
+  border: none;
 }
-
 .clarifion-upsell .overlap {
   height: 161px;
   left: 0;
-  position: absolute;
-  top: 50px;
-  width: 1500px;
+  display: flex;
+
+  width: 100%;
 }
 
 .clarifion-upsell .frame {
@@ -90,15 +115,14 @@
   justify-content: space-between;
   left: 0;
   padding: 30px 127px;
-  position: absolute;
-  top: 0;
-  width: 1500px;
+
+  width: 100%;
 }
 
 .clarifion-upsell .img-2 {
   height: 36px;
   object-fit: cover;
-  position: relative;
+
   width: 192px;
 }
 
@@ -111,10 +135,8 @@
   align-items: center;
   display: inline-flex;
   flex-direction: column;
+  padding: 10px 0px 10px 0px;
   gap: 24px;
-  left: 432px;
-  position: absolute;
-  top: 85px;
 }
 
 .clarifion-upsell .wait-your-order-in {
@@ -125,8 +147,9 @@
   letter-spacing: 0;
   line-height: 48px;
   margin-top: -1px;
-  position: relative;
+
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -139,27 +162,30 @@
   line-height: 24px;
   position: relative;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
-.clarifion-upsell .frame-4 {
+.clarifion-upsell .content {
   background-color: #f9f9f9;
   border-radius: 10px;
-  height: 879px;
-  left: 128px;
+  padding: 4% 20% 0% 20%;
   overflow: hidden;
-  position: absolute;
-  top: 351px;
-  width: 1245px;
+  height: 100%;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.clarifion-upsell .content > div {
+  padding: 1% 10px 0% 2%;
 }
 
 .clarifion-upsell .image {
   height: 591px;
   left: 40px;
   object-fit: cover;
-  position: absolute;
-  top: 40px;
-  width: 575px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .clarifion-upsell .frame-5 {
@@ -168,7 +194,7 @@
   flex-direction: column;
   gap: 32px;
   left: 655px;
-  position: absolute;
+
   top: 40px;
 }
 
@@ -181,7 +207,6 @@
   letter-spacing: 0;
   line-height: 44.8px;
   margin-top: -1px;
-  position: relative;
 }
 
 .clarifion-upsell .span {
@@ -242,6 +267,7 @@
   line-height: 28px;
   position: relative;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -265,6 +291,7 @@
   text-decoration: line-through;
   text-shadow: 0px 6px 32px #00000061;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -278,6 +305,7 @@
   margin-top: -1px;
   position: relative;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -294,7 +322,13 @@
   gap: 16px;
   position: relative;
 }
-
+.clarifion-upsell .content-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .clarifion-upsell .ellipse-wrapper {
   background-color: #e3edff;
   border-radius: 8px;
@@ -322,6 +356,7 @@
   line-height: normal;
   margin-top: -1.39px;
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -396,6 +431,7 @@
   line-height: 25.6px;
   position: relative;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -437,6 +473,7 @@
   line-height: 22.4px;
   position: relative;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -493,6 +530,7 @@
   line-height: normal;
   margin-top: -0.99px;
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -529,6 +567,7 @@
   margin-top: -1px;
   position: relative;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -563,6 +602,7 @@
   position: relative;
   text-align: center;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -581,6 +621,7 @@
   line-height: normal;
   position: relative;
   text-decoration: underline;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -619,8 +660,6 @@
   gap: 18px;
   left: 40px;
   padding: 24px;
-  position: absolute;
-  top: 655px;
   width: 575px;
 }
 
@@ -670,6 +709,7 @@
   line-height: 14px;
   position: relative;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -712,13 +752,15 @@
   position: relative;
 }
 
-.clarifion-upsell .frame-22 {
+.clarifion-upsell .footer {
   background-color: #252f3d;
   height: 88px;
   left: 0;
-  position: absolute;
-  top: 1291px;
-  width: 1500px;
+  display: flex;
+  bottom: 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .clarifion-upsell .frame-23 {
@@ -726,9 +768,9 @@
   border-radius: 4px;
   display: inline-flex;
   gap: 16px;
-  left: 127px;
+
   padding: 8px 0px;
-  position: absolute;
+
   top: 24px;
 }
 
@@ -741,6 +783,7 @@
   line-height: 22.4px;
   position: relative;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -755,9 +798,6 @@
   align-items: center;
   display: inline-flex;
   gap: 16px;
-  left: 1120px;
-  position: absolute;
-  top: 36px;
 }
 
 .clarifion-upsell .lock-2 {
@@ -776,17 +816,18 @@
   position: relative;
   text-align: center;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
-.clarifion-upsell .frame-25 {
+.clarifion-upsell .steps {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  left: 128px;
-  position: absolute;
+
   top: 271px;
-  width: 1245px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .clarifion-upsell .frame-26 {
@@ -822,6 +863,7 @@
   line-height: 22px;
   position: relative;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -861,6 +903,7 @@
   line-height: 22px;
   position: relative;
   white-space: nowrap;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -881,7 +924,32 @@
   left: 12px;
   letter-spacing: 0;
   line-height: 22px;
-  position: absolute;
   top: 11px;
   white-space: nowrap;
+}
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .USPS {
+    display: none;
+  }
+  .clarifion-upsell {
+    flex-direction: column;
+  }
+
+  .USPS {
+    flex-direction: column;
+  }
+  .content {
+    height: auto;
+    flex-direction: column;
+    padding: 4% 0% 0% 0%;
+  }
+  .frame-19 {
+    display: none;
+  }
+
+  .clarifion-upsell .frame-26 {
+    flex-direction: column;
+  }
 }

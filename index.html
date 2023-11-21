@@ -26,10 +26,17 @@
       a {
         text-decoration: none;
       }
+      .app {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: -moz-fit-content;
+        width: fit-content;
+      }
     </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" class="app"></div>
     <script type="module" src="./src/index.jsx"></script>
   </body>
 </html>
